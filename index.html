@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pollería El Chaski | Menú Digital</title>
+  <meta name="description" content="Menú digital de Pollería El Chaski" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="images/logo-chaski.svg" alt="Logo El Chaski" class="logo" />
+      <div>
+        <p class="eyebrow">Pollería</p>
+        <h1>EL CHASKI</h1>
+      </div>
+    </div>
+    <a href="#menu" class="btn btn-outline">Ver menú</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Menú digital</span>
+      <h2>Tu pollito con papas, cremas y sabor de verdad</h2>
+      <p>
+        Bienvenido a <strong>Pollería El Chaski</strong>. Escanea, revisa los precios y
+        pide desde tu mesa con más comodidad.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explorar menú</a>
+        <a href="#bebidas" class="btn btn-secondary">Ver bebidas</a>
+      </div>
+      <ul class="hero-notes">
+        <li>Atención en local</li>
+        <li>Consulta disponibilidad con el personal</li>
+        <li>Precios fáciles de editar más adelante</li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <h3>Recomendado</h3>
+      <div class="highlight-item">
+        <p class="item-name">1/4 Pollo + papas + ensalada</p>
+        <p class="item-price">S/ 15.00</p>
+      </div>
+      <div class="highlight-item">
+        <p class="item-name">1/4 Pollo + chaufa</p>
+        <p class="item-price">S/ 17.00</p>
+      </div>
+      <small>* Puedes cambiar estos precios cuando quieras.</small>
+    </div>
+  </section>
+
+  <main>
+    <section id="mesa" class="section card-section">
+      <div class="section-title">
+        <p class="eyebrow">Mesa</p>
+        <h2>Selecciona tu mesa</h2>
+      </div>
+      <p class="section-text">Esto solo es referencial para que el cliente ubique su mesa. No envía pedidos.</p>
+      <div class="table-grid" id="tableGrid">
+        <button class="table-btn active" type="button">Mesa 1</button>
+        <button class="table-btn" type="button">Mesa 2</button>
+        <button class="table-btn" type="button">Mesa 3</button>
+        <button class="table-btn" type="button">Mesa 4</button>
+        <button class="table-btn" type="button">Mesa 5</button>
+        <button class="table-btn" type="button">Mesa 6</button>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Carta principal</p>
+        <h2>Nuestro menú</h2>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <h3>Pollos y combos</h3>
+          <ul class="menu-list">
+            <li><span>1/4 de pollo + papas + ensalada</span><strong>S/ 15.00</strong></li>
+            <li><span>1/4 de pollo + chaufa</span><strong>S/ 17.00</strong></li>
+            <li><span>1/2 pollo + papas + ensalada</span><strong>S/ 32.00</strong></li>
+            <li><span>Pollo entero + papas + ensalada</span><strong>S/ 62.00</strong></li>
+          </ul>
+        </article>
+
+        <article class="menu-card">
+          <h3>Acompañamientos</h3>
+          <ul class="menu-list">
+            <li><span>Porción de papas</span><strong>S/ 8.00</strong></li>
+            <li><span>Ensalada fresca</span><strong>S/ 6.00</strong></li>
+            <li><span>Aguadito</span><strong>S/ 5.00</strong></li>
+            <li><span>Chaufa adicional</span><strong>S/ 8.00</strong></li>
+          </ul>
+        </article>
+
+        <article class="menu-card" id="bebidas">
+          <h3>Bebidas para acompañar tu pollito con papas</h3>
+          <ul class="menu-list">
+            <li><span>Inca Kola personal</span><strong>S/ 4.00</strong></li>
+            <li><span>Coca-Cola personal</span><strong>S/ 4.00</strong></li>
+            <li><span>Inca Kola 1.5 L</span><strong>S/ 8.00</strong></li>
+            <li><span>Coca-Cola 1.5 L</span><strong>S/ 8.00</strong></li>
+            <li><span>Agua mineral</span><strong>S/ 3.00</strong></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section note-box">
+      <h2>Importante</h2>
+      <p>
+        Si más adelante cambias productos, nombres o precios, solo editas esta página y
+        <strong>el mismo QR seguirá funcionando</strong>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Pollería El Chaski</strong> · Atención en local</p>
+    <p>© <span id="year"></span> · Menú digital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
